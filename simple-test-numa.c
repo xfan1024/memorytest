@@ -15,7 +15,7 @@ void u64test(void *data){
 }
 
 void doubletest(void *data){
-    volatile double *array = (volatile double*)data;
+    volatile double *array = data;
     for (long i = 0; i < SIZE; i++) {
         array[i] = (double)i;
     }
